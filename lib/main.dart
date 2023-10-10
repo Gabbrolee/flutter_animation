@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:implicit_animation_practice/implicit_animation/animated_cross_fade_example.dart';
+import 'package:implicit_animation_practice/implicit_animation/animated_physical_model.dart';
+import 'package:implicit_animation_practice/implicit_animation/animated_position_directional.dart';
+import 'package:implicit_animation_practice/implicit_animation/animated_text_size_example.dart';
 
-import 'animated_align_example.dart';
+import 'implicit_animation/animated_align_example.dart';
+import 'implicit_animation/animated_container_example.dart';
+import 'implicit_animation/animated_list_example.dart';
+import 'implicit_animation/animated_opacity_example.dart';
+import 'implicit_animation/animated_padding_example.dart';
+import 'implicit_animation/animated_position_example.dart';
+import 'implicit_animation/animated_switcher_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Animation Course',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
       home: const MyHomePage(),
     );
@@ -43,12 +53,59 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedAlignExample()));
                 },
-                child: const Text("Lecture #1")),
+                child: const Text("Animated Align Example")),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedAlignExample()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedContainerExample()));
                 },
-                child: const Text("Lecture #2"))
+                child: const Text("Animated Container Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedTextSizeExample()));
+                },
+                child: const Text("Animated Text Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedOpacityExample()));
+                },
+                child: const Text("Animated Opacity Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPaddingExample()));
+                },
+                child: const Text("Animated Padding Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => const AnimatedPhysicalModelExample()));
+                },
+                child: const Text("Animated Physical Model")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionExample()));
+                },
+                child: const Text("Animated Position Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => const AnimatedPositionDirectionalExample()));
+                },
+                child: const Text("Animated Position Directional Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedCrossFadeExample()));
+                },
+                child: const Text("Animated Cross Fade Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedSwitcherExample()));
+                },
+                child: const Text("Animated Switcher Example")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedListExample()));
+                },
+                child: const Text("Animated List Example"))
           ],
         )));
   }
