@@ -65,207 +65,209 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text("Flutter Animation Course"),
         ),
         body: Center(
-            child: ListView(
-          physics: const BouncingScrollPhysics(),
-          children: [
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedAlignExample()));
-                },
-                child: const Text("Animated Align Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedContainerExample()));
-                },
-                child: const Text("Animated Container Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedTextSizeExample()));
-                },
-                child: const Text("Animated Text Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedOpacityExample()));
-                },
-                child: const Text("Animated Opacity Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPaddingExample()));
-                },
-                child: const Text("Animated Padding Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const AnimatedPhysicalModelExample()));
-                },
-                child: const Text("Animated Physical Model")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionExample()));
-                },
-                child: const Text("Animated Position Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const AnimatedPositionDirectionalExample()));
-                },
-                child: const Text("Animated Position Directional Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedCrossFadeExample()));
-                },
-                child: const Text("Animated Cross Fade Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedSwitcherExample()));
-                },
-                child: const Text("Animated Switcher Example")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedListExample()));
-                },
-                child: const Text("Animated List Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PositionTransitionExample()));
-                },
-                child: const Text("Position Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SizeTransitionExample()));
-                },
-                child: const Text("Size Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const RotationTransitionExample()));
-                },
-                child: const Text("Rotation Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedBuilderExample()));
-                },
-                child: const Text("Animated Builder Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const FadeTransitionExample()));
-                },
-                child: const Text("Fade Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const PositionDirectionalTransitionExample()));
-                },
-                child: const Text("Position Directional Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const TweenAnimationBuilderExample()));
-                },
-                child: const Text("Tween Animation Builder Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample()));
-                },
-                child: const Text("Default Text Style Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const IndexedTransitionExample()));
-                },
-                child: const Text("Indexed Transition Example")),
-            ElevatedButton(
+          child: ListView(
+            physics: const BouncingScrollPhysics(),
+            children: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedAlignExample()));
+                  },
+                  child: const Text("Animated Align Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedContainerExample()));
+                  },
+                  child: const Text("Animated Container Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedTextSizeExample()));
+                  },
+                  child: const Text("Animated Text Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedOpacityExample()));
+                  },
+                  child: const Text("Animated Opacity Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPaddingExample()));
+                  },
+                  child: const Text("Animated Padding Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => const AnimatedPhysicalModelExample()));
+                  },
+                  child: const Text("Animated Physical Model")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionExample()));
+                  },
+                  child: const Text("Animated Position Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => const AnimatedPositionDirectionalExample()));
+                  },
+                  child: const Text("Animated Position Directional Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedCrossFadeExample()));
+                  },
+                  child: const Text("Animated Cross Fade Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedSwitcherExample()));
+                  },
+                  child: const Text("Animated Switcher Example")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedListExample()));
+                  },
+                  child: const Text("Animated List Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const PositionTransitionExample()));
+                  },
+                  child: const Text("Position Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const SizeTransitionExample()));
+                  },
+                  child: const Text("Size Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const RotationTransitionExample()));
+                  },
+                  child: const Text("Rotation Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedBuilderExample()));
+                  },
+                  child: const Text("Animated Builder Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const FadeTransitionExample()));
+                  },
+                  child: const Text("Fade Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => const PositionDirectionalTransitionExample()));
+                  },
+                  child: const Text("Position Directional Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => const TweenAnimationBuilderExample()));
+                  },
+                  child: const Text("Tween Animation Builder Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample()));
+                  },
+                  child: const Text("Default Text Style Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const IndexedTransitionExample()));
+                  },
+                  child: const Text("Indexed Transition Example")),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageFadeTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageScaleTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Scale Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              //
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageRotateTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Rotate Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageSlideTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Slide Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
-                  Navigator.push(context, PageFadeTransition(const PageTwo()));
+                  Navigator.push(context, PageSizeTransition(const PageTwo()));
                 },
                 child: const Text(
-                  "Page Transition",
+                  "Page Size Transition",
                   style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageScaleTransition(const PageTwo()));
-                },
-                child: const Text(
-                  "Page Scale Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            //
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageRotateTransition(const PageTwo()));
-                },
-                child: const Text(
-                  "Page Rotate Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageSlideTransition(const PageTwo()));
-                },
-                child: const Text(
-                  "Page Slide Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-              onPressed: () {
-                Navigator.push(context, PageSizeTransition(const PageTwo()));
-              },
-              child: const Text(
-                "Page Size Transition",
-                style: TextStyle(color: Colors.white),
+                ),
               ),
-            ),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageMixSizeFadeTransition(const PageTwo()));
-                },
-                child: const Text(
-                  "Page Mix Size Fade Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageMixScaleRotateTransition(const PageTwo()));
-                },
-                child: const Text(
-                  "Page Mix Size Rotate Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageMixSizeFadeTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Mix Size Fade Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  onPressed: () {
+                    Navigator.push(context, PageMixScaleRotateTransition(const PageTwo()));
+                  },
+                  child: const Text(
+                    "Page Mix Size Rotate Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const CustomPainterExample()));
+                  },
+                  child: const Text(
+                    "Custom Painter Example Transition",
+                    style: TextStyle(color: Colors.white),
+                  )),
+              ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const CustomPainterExample()));
-                },
-                child: const Text(
-                  "Custom Painter Example Transition",
-                  style: TextStyle(color: Colors.white),
-                )),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const LottieSliderExample()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const LottieSliderExample()));
                 },
                 child: const Text(
                   "Lottie Slider",
                   style: TextStyle(color: Colors.white),
-                )),
-          ],
-        )));
+                ),
+              ),
+            ],
+          ),
+        ));
   }
 }
