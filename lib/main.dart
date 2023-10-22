@@ -3,6 +3,7 @@ import 'package:implicit_animation_practice/implicit_animation/animated_cross_fa
 import 'package:implicit_animation_practice/implicit_animation/animated_physical_model.dart';
 import 'package:implicit_animation_practice/implicit_animation/animated_position_directional.dart';
 import 'package:implicit_animation_practice/implicit_animation/animated_text_size_example.dart';
+import 'package:implicit_animation_practice/more_transition/custom_painter_example.dart';
 import 'package:implicit_animation_practice/page_transition/page_fade_transition.dart';
 import 'package:implicit_animation_practice/page_transition/page_mix_scale_rotate_transition.dart';
 import 'package:implicit_animation_practice/page_transition/page_mix_size_transition.dart';
@@ -28,6 +29,7 @@ import 'implicit_animation/animated_opacity_example.dart';
 import 'implicit_animation/animated_padding_example.dart';
 import 'implicit_animation/animated_position_example.dart';
 import 'implicit_animation/animated_switcher_example.dart';
+import 'more_transition/lottie_slider_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -243,6 +245,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "Page Mix Size Rotate Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const CustomPainterExample()));
+                },
+                child: const Text(
+                  "Custom Painter Example Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const LottieSliderExample()));
+                },
+                child: const Text(
+                  "Lottie Slider",
                   style: TextStyle(color: Colors.white),
                 )),
           ],
