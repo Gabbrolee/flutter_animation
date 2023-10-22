@@ -179,38 +179,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       context, MaterialPageRoute(builder: (context) => const IndexedTransitionExample()));
                 },
                 child: const Text("Indexed Transition Example")),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageFadeTransition(const PageTwo()));
-                },
-                child: const Text("Page Transition", style: TextStyle(color: Colors.white),)),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageScaleTransition(const PageTwo()));
-                },
-                child: const Text("Page Scale Transition", style: TextStyle(color: Colors.white),)),
-
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageRotateTransition(const PageTwo()));
-                },
-                child: const Text("Page Rotate Transition", style: TextStyle(color: Colors.white),)),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageSlideTransition(const PageTwo()));
-                },
-                child: const Text("Page Slide Transition", style: TextStyle(color: Colors.white),)),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                onPressed: () {
-                  Navigator.push(context, PageSizeTransition(const PageTwo()));
-                },
-                child: const Text("Page Size Transition", style: TextStyle(color: Colors.white),)),
-
           ],
         )));
   }
