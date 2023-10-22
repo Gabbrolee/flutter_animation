@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:rive/rive.dart';
 
-class LottieSliderExample extends StatefulWidget {
-  const LottieSliderExample({super.key});
+class RiveSliderExample extends StatefulWidget {
+  const RiveSliderExample({super.key});
 
   @override
-  State<LottieSliderExample> createState() => _LottieSliderExampleState();
+  State<RiveSliderExample> createState() => _RiveSliderExampleState();
 }
 
-class _LottieSliderExampleState extends State<LottieSliderExample> {
+class _RiveSliderExampleState extends State<RiveSliderExample> {
   final List<String> _animationPaths = [
-    'images/lottie/tigger.json',
-    'images/lottie/bird.json',
-    'images/lottie/car.json'
+    'images/riv/bear.riv',
+    'images/riv/girl.riv',
+    'images/riv/rating.riv'
   ];
 
   final _pageController = PageController();
@@ -51,7 +52,7 @@ class _LottieSliderExampleState extends State<LottieSliderExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Custom Paint Example"),
+        title: const Text("Rive Animation Example"),
       ),
       body: PageView.builder(
           controller: _pageController,
@@ -63,10 +64,8 @@ class _LottieSliderExampleState extends State<LottieSliderExample> {
           itemCount: _animationPaths.length,
           itemBuilder: (BuildContext context, int index) {
             return Center(
-              child: Lottie.asset(
+              child: RiveAnimation.asset(
                 _animationPaths[index],
-                repeat: true,
-                reverse: false,
               ),
             );
           }),

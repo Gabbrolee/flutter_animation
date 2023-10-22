@@ -30,6 +30,7 @@ import 'implicit_animation/animated_padding_example.dart';
 import 'implicit_animation/animated_position_example.dart';
 import 'implicit_animation/animated_switcher_example.dart';
 import 'more_transition/lottie_slider_example.dart';
+import 'more_transition/rive_slider_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -263,6 +264,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text(
                   "Lottie Slider",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const RiveSliderExample()));
+                },
+                child: const Text(
+                  "Rive Slider",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
