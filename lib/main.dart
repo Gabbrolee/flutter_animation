@@ -4,6 +4,8 @@ import 'package:implicit_animation_practice/implicit_animation/animated_physical
 import 'package:implicit_animation_practice/implicit_animation/animated_position_directional.dart';
 import 'package:implicit_animation_practice/implicit_animation/animated_text_size_example.dart';
 import 'package:implicit_animation_practice/page_transition/page_fade_transition.dart';
+import 'package:implicit_animation_practice/page_transition/page_mix_scale_rotate_transition.dart';
+import 'package:implicit_animation_practice/page_transition/page_mix_size_transition.dart';
 import 'package:implicit_animation_practice/page_transition/page_rotate_transition.dart';
 import 'package:implicit_animation_practice/page_transition/page_scale_transition.dart';
 import 'package:implicit_animation_practice/page_transition/page_size_transition.dart';
@@ -175,8 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => const IndexedTransitionExample()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const IndexedTransitionExample()));
                 },
                 child: const Text("Indexed Transition Example")),
             ElevatedButton(
@@ -184,33 +185,66 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context, PageFadeTransition(const PageTwo()));
                 },
-                child: const Text("Page Transition", style: TextStyle(color: Colors.white),)),
+                child: const Text(
+                  "Page Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
                   Navigator.push(context, PageScaleTransition(const PageTwo()));
                 },
-                child: const Text("Page Scale Transition", style: TextStyle(color: Colors.white),)),
-
+                child: const Text(
+                  "Page Scale Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
+            //
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
                   Navigator.push(context, PageRotateTransition(const PageTwo()));
                 },
-                child: const Text("Page Rotate Transition", style: TextStyle(color: Colors.white),)),
+                child: const Text(
+                  "Page Rotate Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
                   Navigator.push(context, PageSlideTransition(const PageTwo()));
                 },
-                child: const Text("Page Slide Transition", style: TextStyle(color: Colors.white),)),
+                child: const Text(
+                  "Page Slide Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+              onPressed: () {
+                Navigator.push(context, PageSizeTransition(const PageTwo()));
+              },
+              child: const Text(
+                "Page Size Transition",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 onPressed: () {
-                  Navigator.push(context, PageSizeTransition(const PageTwo()));
+                  Navigator.push(context, PageMixSizeFadeTransition(const PageTwo()));
                 },
-                child: const Text("Page Size Transition", style: TextStyle(color: Colors.white),)),
-
+                child: const Text(
+                  "Page Mix Size Fade Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                onPressed: () {
+                  Navigator.push(context, PageMixScaleRotateTransition(const PageTwo()));
+                },
+                child: const Text(
+                  "Page Mix Size Rotate Transition",
+                  style: TextStyle(color: Colors.white),
+                )),
           ],
         )));
   }
